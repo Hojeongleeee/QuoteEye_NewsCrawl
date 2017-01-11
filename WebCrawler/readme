@@ -1,0 +1,9 @@
+프로그램 작동 순서
+
+1. CrawlManager 할당
+2. CrawlManager에서 최근에 읽어온 기사 가져옴, 없을 경우 최초의 index로 시작
+3. Parser 스레드 할당
+4. 각 Parser 스레드에 CrawlManager가 Index 할당
+5. 할당된 Index를 통해 기사 접근
+6. Parser가 각각 파싱한 후 Item에 저장
+7. 
